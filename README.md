@@ -1,8 +1,6 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# If you are interested to contribute to this app feel free to do , I will reply and check req ASAP
+## link to web
+```
+https://dewang002.github.io/Movie-app-react-/
+```
+` And obviously it just to show all the detail but not actually show or play movie because I did'nt found any API for that `
