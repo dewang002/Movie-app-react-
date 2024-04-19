@@ -1,13 +1,16 @@
 import React from "react";
 import ReactPlayer from "react-player";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import Notfound from "../Notfound";
 function Trailer() {
   const navigate = useNavigate();
-  // add tv here on link below
-  const ytvideo = useSelector((state) => state.movie.info.videos[0]);
+  const {pathname}= useLocation()
+  const category = pathname.includes("movie")?"movie":"tv"
+  const ytvideo = useSelector((state) => state[category].info.videos[0]? state[category].info.videos[0]:<Notfound />);
+
   console.log(ytvideo);
+
   return (
     <div className="h-full w-full  absolute top-0 left-0 flex justify-center items-center">
       <i

@@ -15,7 +15,7 @@ function Tvshows() {
   const [hasmore, sethasmore] = useState(true)
   document.title= "Moviis | Tv-show"
 
-  console.log(tvshows)
+
   async function gettv() {
     try {
       const { data } = await axios.get(`/tv/${category}?page=${page}`);

@@ -13,7 +13,6 @@ function Moviedetail() {
   const { info } = useSelector((state) => state.movie);
   const dispatch = useDispatch();
   
-console.log(info)
   useEffect(() => {
     dispatch(asyncMovie(id));
    
@@ -24,9 +23,9 @@ console.log(info)
 
   return info && info.detail  ? (
   
-    <div className="min-h-screen w-screen bg-zinc-800 mb-[13%]">
+    <div className="min-h-screen w-screen bg-zinc-800 mb-[8%]">
       <img
-        className="relative  object-cover object-top opacity-50 blur-sm"
+        className="relative h-[72%] w-full object-cover object-top opacity-50 blur-sm"
         src={`https://image.tmdb.org/t/p/original/${
           info.detail.backdrop_path || info.detail.profile_path
         }`}

@@ -2,11 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: "montreal";
+    src: url(./Utils/NeueMontreal-Regular.woff);
+}
 
 ::-webkit-scrollbar{
     width: 7px;
     height: 7px; 
     opacity: 1;
+    border-radius: 50px;
     background-color: #27272A;
 }
 ::-webkit-scrollbar-thumb{
