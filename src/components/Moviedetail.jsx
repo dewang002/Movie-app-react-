@@ -41,7 +41,7 @@ function Moviedetail() {
         <a target="_blank" href={info.detail.homepage}>
           <i class="ri-external-link-line text-zinc-100 text-xl hover:text-purple-500 duration-300"></i>
         </a>
-        <a  href='/'>
+        <a  href='/Movie-app-react-/'>
           <i class="ri-home-5-line text-zinc-100 text-xl hover:text-purple-500 duration-300"></i>
         </a>
         <a
