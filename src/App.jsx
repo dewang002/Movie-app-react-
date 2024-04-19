@@ -11,6 +11,9 @@ import Moviedetail from './components/Moviedetail'
 import Tvshowsdetail from './components/Tvshowsdetail'
 import Peopledetail from './components/Peopledetail'
 import Trailer from './components/partials/Trailer'
+import About from './components/About'
+import Contact from './components/Contact'
+
 
 
 function App() {
@@ -37,7 +40,10 @@ function App() {
       />
     </Route>
     <Route path='/people' element={<People />} />
-    <Route path='/people/details/:id' element={<Peopledetail />} />
+    <Route path='/people/:id' element={<Peopledetail />} />
+    <Route path='/about' element={<About />} />
+    <Route path='/contact-us' element={<Contact />} />
+    
     </Routes>
 
     </div>

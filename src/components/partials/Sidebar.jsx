@@ -20,9 +20,9 @@ function Sidebar() {
       </div>
       <hr className='w-[80%] ml-[10%] bg-zinc-800 '/>
       <div className='h-[40%] w-[100%] flex flex-col pl-8'>
-        <h3 className='text-2xl p-2 m-2 hover:bg-[#8644A2] hover:text-white text-zinc-400 rounded duration-300'>WebDetails</h3>
-        <Link className='text-2xl p-2 m-2 hover:bg-[#8644A2] hover:text-white text-zinc-400 rounded duration-300'>About</Link>
-        <Link className='text-2xl p-2 m-2 hover:bg-[#8644A2] hover:text-white text-zinc-400 rounded duration-300'>Contact Us</Link>
+        <h3 className='text-2xl font-bold p-2 m-2 hover:bg-[#8644A2] hover:text-white rounded duration-300'>WebDetails</h3>
+        <Link to="/about" className='text-2xl p-2 m-2 hover:bg-[#8644A2] hover:text-white text-zinc-400 rounded duration-300'>About</Link>
+        <Link to="/contact-us" className='text-2xl p-2 m-2 hover:bg-[#8644A2] hover:text-white text-zinc-400 rounded duration-300'>Contact Us</Link>
       </div>
     </div>
   )
