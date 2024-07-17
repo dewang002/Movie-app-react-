@@ -63,3 +63,17 @@ select {
     .select:hover::after {
     color: #7e73c2;
     }
+
+    @media (min-width: 360px) {
+        .select {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 15em;
+            height: 2.4em;
+            margin: 2vw;
+            line-height: 3;
+            overflow: hidden;
+            border-radius: 50px;
+            }
+    }

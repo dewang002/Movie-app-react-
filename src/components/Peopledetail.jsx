@@ -69,7 +69,7 @@ function Peopledetail() {
         <h1 className=" text-white font-bold text-5xl ">
           {info.detail.original_title}
         </h1>{" "}
-        <span className="text-lg font-semibold translate-y-[2vh] translate-x-[-3vh] ">
+        <span className="text-lg font-semibold translate-y-[2vh] md:translate-x-[-3vh] ">
           ({info.detail.release_date.split("-")[0]})
         </span>
 

@@ -19,7 +19,7 @@ import Contact from './components/Contact'
 function App() {
 
   return (
-    <div className='min-h-[100%] w-full flex bg-zinc-800 text-white overflow-hidden'>
+    <div className='min-h-[100%] w-full flex bg-zinc-800  text-white overflow-hidden'>
       
     <Routes>
     <Route path='/' element={<Home />} />    

@@ -21,10 +21,10 @@ const header = ({ data }) => {
           }}
         >
           <div className="flex justify-end pl-10 pb-4  flex-col h-full w-full">
-            <h1 className="text-5xl w-[70%] font-black pb-6">
+            <h1 className="md:text-5xl text-xl  md:w-[70%] font-black pb-6">
               {data.original_title || data.name}
             </h1>
-            <h3 className="text-1xl w-[50%] mix-blend-screen text-zinc-400">
+            <h3 className="text-1xl w-[50%] hidden md:block mix-blend-screen text-zinc-400">
               {data.overview}...{" "}
               <Link
                 to={`/${data.media_type}/details/${data.id}`}

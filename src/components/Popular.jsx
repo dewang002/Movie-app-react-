@@ -45,20 +45,20 @@ function Popular() {
     refreshpage();
   }, [category]);
   return popular.length > 0 ? (
-    <div className="p-4 w-full">
-      <div className="flex items-start justify-between ">
-        <div className="left w-[30%] flex items-center">
+    <div className="pt-0 md:pt-4 p-4  w-full">
+            <div className="fixed z-[999] md:flex items-start justify-start bg-[#27272A]">
+        <div className=" left w-[30%] flex items-center">
           <i
             onClick={() => navigate(-1)}
             className="ri-arrow-left-line text-[#8576FF] font-black text-2xl"
           ></i>{" "}
-          <h1 className="text-4xl font-bold text-zinc-300 ml-4">Popular</h1>
+          <h1 className="text-4xl font-bold text-zinc-300 ml-4 flex items-end gap-2">Popular</h1>
         </div>
-        <div className="right  flex justify-start items-center ">
-          <div className="translate-y-[-23%] w-[100%]">
+        <div className="right w-full h-full flex flex-col md:flex-row justify-center  md:items-center ">
+        <div className="md:translate-y-[-23%] md:translate-x-0 translate-x-[-10%] md:my-4   w-[100vw] md:w-[100%]">
             <Search />
           </div>
-          <div className="flex w-[32%]">
+          <div className="md:flex md:w-[32%] w-full ">
             <Dropdown
               title="Filter"
               options={["movie", "tv"]}
@@ -70,6 +70,7 @@ function Popular() {
       </div>
 
       <InfiniteScroll
+      className='mt-48'
         dataLength={popular.length}
         next={getpopular}
         hasMore={hasmore}

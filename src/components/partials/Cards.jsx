@@ -9,7 +9,7 @@ function Cards({ trending, title }) {
         return (
           <div
             key={index}
-            className="h-[40vh] w-[20vw] shrink-0 rounded realtive"
+            className="md:h-[40vh] md:w-[20vw] md:shrink-0  rounded realtive"
           >
             <div className="h-[90%] w-[90%] bg-zinc-300 overflow-y-auto ">
               <Link
@@ -24,7 +24,7 @@ function Cards({ trending, title }) {
                   alt=""
                 />
                 {elem.vote_average && (
-                  <div className="text-zinc-100 text-xl font-black absolute h-12 w-12 bg-yellow-500 rounded-full flex justify-center items-center translate-y-[-4vw] translate-x-[16.8vw]">
+                  <div className="text-zinc-100 text-xl font-black absolute h-12 w-12 bg-yellow-500 rounded-full flex justify-center items-center md:translate-y-[-4vw] translate-y-[-15vw] md:translate-x-[16.8vw]">
                     {Math.floor(elem.vote_average * 10)}{" "}
                     <span className="text-sm">%</span>
                   </div>

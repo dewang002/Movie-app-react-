@@ -39,7 +39,7 @@ function Home() {
   return (
     <>
       <Sidebar />
-      <div className="w-[80%] min-h-[100%] flex flex-col">
+      <div className="w-[80%] mx-auto  min-h-[100%] flex flex-col">
         <Search />
         <Header data={wallpaper} />
         <Dropdown
